@@ -1,3 +1,9 @@
+/* 
+colors:
+yellow:  #FFBE00
+Navy:    #192B37
+*/
+
 * {
     padding: 0;
     margin: 0;
@@ -6,14 +12,16 @@
 
 /* -------Temporary styles for structural html --------*/
 
-* {
-    padding: 0.5rem;
+section {
     border: 2px solid rgb(225,225,225);
 }
 
-body { border: none; }
-html { border: none; }
+body { 
+       font-family: 'catamaran', sans-serif;
+       color: #192B37; 
+}
 
+ 
 /* Image Styles */
 .bg-image {
     background-image: url('/images/the-sleep-co1.jpg');
@@ -28,6 +36,38 @@ html { border: none; }
 
 .bg-dark { background-color: #192B37;
            color: white; 
- }
+}
 
-  
+
+
+.featured-text { color: #FFBE00; }
+
+.font-weight-light  { font-weight: 200;    }
+.font-weight-normal { font-weight: normal; }
+.font-weight-extra-bold { font-weight: 800;    }
+
+
+.text-left     { text-align: left;   }
+.text-center   { text-align: center; }
+.text-right    { text-align: right;  }
+
+.tall-80   { min-height: 80vh;  }
+.tall-90   { min-height: 90vh;  }
+.tall-100  { min-height: 100vh; }
+
+
+
+
+
+/* Header Styles */
+
+header {
+    background-image: url('/images/the-sleep-co1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header h3 {
+    font-size: 5.5rem;
+    line-height: 1;
+}
