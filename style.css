@@ -159,6 +159,15 @@ footer a {
  }
 
 
+/* Buttons & Forms */
+
+input,
+textarea {
+    width:  100%;
+    display: block;
+    
+}
+
 /* Icon Grid */
  
 .fas {
