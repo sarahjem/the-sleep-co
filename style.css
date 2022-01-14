@@ -18,6 +18,11 @@ Navy:    #192B37
     min-height: 10rem;
 }
 
+.landscape { padding-bottom: 65% }
+.portrait { padding-bottom: 125% }
+.square { padding-bottom: 100% }
+
+
 /* Universal styles & Utility classes */
 
 body { 
@@ -33,6 +38,12 @@ body {
            color: white; 
 }
 
+.bg-featured { background-color: #FFBE00;
+}
+
+.bg-light { background-color: #E3ECF2;
+}
+
 
 .tall-50   { min-height: 50vh;  }
 .tall-60   { min-height: 60vh;  }
@@ -41,13 +52,20 @@ body {
 .tall-90   { min-height: 90vh;  }
 .tall-100  { min-height: 100vh; }
 
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
 
 /* Typography Styles  */
 
+h2,h3,h4,h5,h6 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
 h2 {
     font-size: 2.5rem;
-    line-height: 1.1;
-    margin-bottom: 1rem;
 }
 
 h3 {
