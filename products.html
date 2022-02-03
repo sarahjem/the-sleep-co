@@ -1,5 +1,12 @@
 ---
 layout: default
+cards:
+ - heading: Small heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic culpa quo ipsa, porro nisi.
+ - heading: Small heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic culpa quo ipsa, porro nisi.
+ - heading: Small heading
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam hic culpa quo ipsa, porro nisi.
 ---
 
     
@@ -44,29 +51,17 @@ layout: default
     <!-- Cards -->
 
     <section class="grid padded">
+        {% for item in page.cards%}
         <div class="col-4_sm-12 padded-sm">
             <div class="card">
                 <div class="bg-image portrait"></div>
                 <div class="padded-1">
-                    <h3> little heading</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam vero obcaecati sed perspiciatis, nihil vitae fugit, voluptatibus delectus inventore totam qui recusandae eligendi facere odit nobis, reprehenderit dicta nisi?</p>
+                    <h3> {{item.heading}}</h3>
+                    <p> {{item.description}} </p>
                 </div>
             </div>
         </div>
-        <div class="col-4_sm-12 padded-sm">
-            <div class="bg-image portrait"></div>
-                <div class="padded-1">
-                    <h3> little heading</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam vero obcaecati sed perspiciatis, nihil vitae fugit, voluptatibus delectus inventore totam qui recusandae eligendi facere odit nobis, reprehenderit dicta nisi?</p>
-                </div>
-        </div>
-        <div class="col-4_sm-12 padded-sm">
-            <div class="bg-image portrait"></div>
-                <div class="padded-1">
-                    <h3> little heading</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam vero obcaecati sed perspiciatis, nihil vitae fugit, voluptatibus delectus inventore totam qui recusandae eligendi facere odit nobis, reprehenderit dicta nisi?</p>
-                </div>
-        </div>
+        {% endfor %}
     </section>
 
     <!----------------------- Image Banner ------------------------->

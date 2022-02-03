@@ -253,7 +253,8 @@ textarea:focus {
 
 /* Icon Grid */
  
-.fas {
+.fas,
+.fab {
     display: block;
     text-align: center;
     margin-bottom: 2rem;

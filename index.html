@@ -1,12 +1,21 @@
 ---
 layout: default
+features:
+ - icon: fas fa-cloud
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cupiditate in necessitatibus assumenda dolorem quas nostrum neque iusto. Minus quidem illo delectus beatae nulla temporibus qui sint maiores excepturi quaerat.
+ - icon: fas fa-bed
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cupiditate in necessitatibus assumenda dolorem quas nostrum neque iusto. Minus quidem illo delectus beatae nulla temporibus qui sint maiores excepturi quaerat.
+ - icon: fas fa-pizza-slice
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cupiditate in necessitatibus assumenda dolorem quas nostrum neque iusto. Minus quidem illo delectus beatae nulla temporibus qui sint maiores excepturi quaerat.
+ - icon: fas fa-apple-alt
+   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cupiditate in necessitatibus assumenda dolorem quas nostrum neque iusto. Minus quidem illo delectus beatae nulla temporibus qui sint maiores excepturi quaerat.
 ---
 
     <!---------------- Header Banner -------------------->
     <header class="padded grid text-center tall-100 md-tall-80">
 
         {% include header-nav.html %}
-        
+
         <div class="col-12">
             <h3 class="font-weight-extra-bold editable"> 
                 <span class="featured-text"> sleep </span> like a baby 
@@ -43,26 +52,19 @@ layout: default
 
     <!-------------------- Feature icon grid --------------------->
 
-    <section class="padded grid bg-dark">
+    <section class="padded grid-center bg-dark">
         <div class="padded-sm col-12 text-center">
             <h2> <span class="featured-text"> features </span> you will love </h2>
         </div>
+
+        {% for item in page.features %}
         <div class="padded-sm col-3_sm-6 xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam vero obcaecati sed perspiciatis, nihil vitae fugit, voluptatibus delectus inventore totam qui recusandae eligendi facere odit nobis, reprehenderit dicta nisi?</p>
+            <i class="{{item.icon}}"></i>
+            <p> {{item.description}} </p>
         </div>
-        <div class="padded-sm col-3_sm-6 xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam vero obcaecati sed perspiciatis, nihil vitae fugit, voluptatibus delectus inventore totam qui recusandae eligendi facere odit nobis, reprehenderit dicta nisi?</p>
-        </div>
-        <div class="padded-sm col-3_sm-6 xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam vero obcaecati sed perspiciatis, nihil vitae fugit, voluptatibus delectus inventore totam qui recusandae eligendi facere odit nobis, reprehenderit dicta nisi?</p>
-        </div>
-        <div class="padded-sm col-3_sm-6 xxs-stack editable">
-            <i class="fas fa-cloud"></i>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam vero obcaecati sed perspiciatis, nihil vitae fugit, voluptatibus delectus inventore totam qui recusandae eligendi facere odit nobis, reprehenderit dicta nisi?</p>
-        </div>
+        {% endfor %}
+       
+        
     </section>
 
      <!----------------------- Image Banner ------------------------->
