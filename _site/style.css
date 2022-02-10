@@ -272,6 +272,18 @@ footer a {
 
  }
 
+ /* Background of Gallery when active */
+ .lg-backdrop {
+    background-color: rgb(60,60,60);
+ }
+
+ .lg-backdrop.in {
+     opacity: 0.9;
+ }
+
+ .lg-sub-html {
+     background-color: rgb(60,60,60);
+ }
 
 /* Buttons & Forms */
 
